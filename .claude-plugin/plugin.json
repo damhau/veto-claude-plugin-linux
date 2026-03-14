@@ -1,0 +1,20 @@
+{
+  "name": "veto-linux",
+  "version": "0.2.6",
+  "description": "Veto permission gateway for Claude Code (Linux/macOS)",
+  "author": {
+    "name": "Veto",
+    "url": "https://github.com/damhau/veto"
+  },
+  "repository": "https://github.com/damhau/veto-claude-plugin-linux",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "permissions",
+    "governance",
+    "hooks",
+    "guardrails",
+    "policy"
+  ],
+  "commands": "./commands/"
+}
