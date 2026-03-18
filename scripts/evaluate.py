@@ -88,6 +88,14 @@ def main():
         log("missing config -> fail open")
         sys.exit(0)
 
+    # Skip evaluation for configured tool names
+    skip_tools = config.get("skip_tools", [])
+    tool_name = hook_input.get("tool_name", "")
+    if tool_name in skip_tools:
+        log(f"tool '{tool_name}' is in skip_tools -> allow")
+        send_decision("allow")
+        sys.exit(0)
+
     server_url = config.get("server_url", "https://api.vetoapp.io")
     api_key = config.get("api_key", "")
     fail_policy = config.get("fail_policy", "open")

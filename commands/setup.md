@@ -23,8 +23,9 @@ Step 3 - After collecting all answers:
    Run: `mkdir -p ~/.veto`
 
 2. Edit if it already exist or Write the config file using the Write tool to `~/.veto/config.json`:
-   Content: {"api_key": "...", "fail_policy": "...", "timeout": 25}
+   Content: {"api_key": "...", "fail_policy": "...", "timeout": 25, "skip_tools": []}
    Use the fail_policy value from the user's answer in Step 1 ("open" or "closed").
    If the user skipped the API key, set "api_key": ""
+   The "skip_tools" array can contain tool names (e.g. "Read", "Glob") that bypass Veto evaluation and are always allowed.
 
 3. Report success or failures

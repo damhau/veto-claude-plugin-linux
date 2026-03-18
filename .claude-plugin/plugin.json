@@ -1,6 +1,6 @@
 {
   "name": "veto-linux",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Veto permission gateway for Claude Code (Linux/macOS)",
   "author": {
     "name": "Veto",
